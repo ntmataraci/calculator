@@ -1,4 +1,3 @@
-
 let value = "";
 let opr;
 let firstValue;
@@ -10,7 +9,7 @@ document.querySelector(".keyboard--numbers").addEventListener("click", (e) => {
     if (e.target.localName == "button") {
         if (e.target.innerText == "AC") {
             numberHelpers(e.target.innerText)
-        } else {
+        }else {
             if (!firstValue) {
                 value += e.target.innerText
                 document.querySelector("#screen--text").value = value
@@ -23,6 +22,15 @@ document.querySelector(".keyboard--numbers").addEventListener("click", (e) => {
     }
 })
 
+document.getElementById("backspace").addEventListener("click",()=>{  
+    value=value.slice(0,-1)
+    document.querySelector("#screen--text").value =value
+    if(firstValue){
+    secondValue=secondValue.slice(0,-1)
+    document.querySelector("#screen--text").value=secondValue
+ 
+    }
+     })
 
 
 /* keydown listener */
@@ -36,7 +44,9 @@ document.addEventListener("keydown", (e) => {
     }
 })
 
-
+// document.getElementById("backspace").addEventListener("click",()=>{
+//     backSpace()
+// })
 
 
 /*--------------*/
@@ -50,8 +60,13 @@ function numberHelpers(e) {
         secondValue = "";
         score = "";
         document.querySelector("#screen--text").value = 0
+        document.querySelector("#targetAc").addEventListener("dblclick",()=>{
+            boxMessage.innerHTML=""
+        })
     }
 }
+
+
 
 document.querySelector(".keyboard--operators").addEventListener("click", (e) => {
     if (secondValue) {
@@ -394,6 +409,7 @@ function reversePower(x, y) {
     return (x ** (1 / y))
 }
 
+
 function cube(x) {
     return x ** 3
 }
@@ -659,3 +675,4 @@ function dataCopy(){
 //     if ( e.keyCode===13)
 //     {document.querySelector("#screen--text").value=eval(activeScore)}
 // }
+
