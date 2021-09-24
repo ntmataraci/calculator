@@ -16,7 +16,7 @@ document.querySelector(".keyboard--numbers").addEventListener("click", (e) => {
                 document.querySelector("#screen--text").value = value
             } else {
                 document.querySelector("#screen--text").value = ""
-                 e.target.innerText!="."?secondValue += (+e.target.innerText):e.target.innerText
+                 e.target.innerText!="."?secondValue += (+e.target.innerText):secondValue +=e.target.innerText
                 document.querySelector("#screen--text").value = secondValue
             }
         }
