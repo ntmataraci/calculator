@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body>
+    <div class="left">
+        <div class="newScreen">
+            <div class="newScreen--content">
+                <div class="newScreen--message">Please ...</div>
+                <div class="newScreen--value"><input type="text" name="" class="val"></div>
+                <div class="newScreen--message">Please ...</div>
+                <div class="newScreen--value"><input type="text" name="" class="val"></div>
+                <div class="newScreen--message">Please ...</div>
+                <div class="newScreen--value"><input type="text" name="" class="val"></div>
+                <div class="newScreen--message">Please ...</div>
+                <div class="newScreen--value"><input type="text" name="" class="val"></div>
+            </div>
+            <div class="newScreen--submit">Send</div>
+            <canvas id="myCanvas" width="120" height="120"></canvas>
+        </div>
+        <div class="main">
+            <div class="screen">
+                <input readonly type="text" name="" id="screen--text">
+            </div>
+
+            <div class="keyboard">
+
+                <div class="keyboard--numbers">
+                    <button>1</button>
+                    <button>2</button>
+                    <button>3</button>
+                    <button>4</button>
+                    <button>5</button>
+                    <button>6</button>
+                    <button>7</button>
+                    <button>8</button>
+                    <button>9</button>
+                    <button>0</button>
+                    <button>.</button>
+                    <button>AC</button>
+                </div>
+
+
+                <div class="keyboard--operators">
+                    <button>=</button>
+                    <button>/</button>
+                    <button>*</button>
+                    <button>-</button>
+                    <button>+</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="main">
+            <div class="angles">
+                <button>sin(x)</button>
+                <button>cos(x)</button>
+                <button>tan(x)</button>
+                <button>cot(x)</button>
+                <button>asin(x)</button>
+                <button>acos(x)</button>
+                <button>atan(x)</button>
+                <button>acot(x)</button>
+                <button>logY</button>
+                <button>lnY</button>
+                <button>fac!</button>
+                <button>Perm(x,y)</button>
+                <button>Comb(x,y)</button>
+                <button>x^y</button>
+                <button><i class="fas fa-square-root-alt">sqr</i></button>
+            </div>
+        </div>
+
+        <div class="main">
+            <div class="volumes">
+                <button><i class="fas fa-cube">Cube</i></button>
+                <button><i class="fas fa-circle">Sphere</i></button>
+                <button><i class="fas fa-caret-up">Pyramid</i></button>
+                <button>Ball Pin Metem</button>
+            </div>
+        </div>
+        <div class="main">
+            <div class="saves">
+                <button id="insertText">Insert Text</button>
+                <button id="saveOne">Save 1</button>
+                <button id="saveTwo">Save 2</button>
+                <button id="resetOne">Reset 1</button>
+                <button id="resetTwo">Reset 2</button>
+
+
+            </div>
+
+        </div>
+
+    </div>
+    <div class="right">
+        <div class="dataBox">
+            <div class="dataBox__row"></div>
+        </div>
+        <div class="dataBox__buttons">
+<button id="databoxSave">Save</button>
+<button id="databoxLoad">Load</button>
+<button id="databoxCopy">Copy</button>
+        </div>
+    </div>
+
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
