@@ -94,7 +94,7 @@ function calculate(opr) {
         case "*":
             writeDataToBox(opr)
             writeDataToBox(secondValue)
-            score = +firstValue * (+secondValue)
+            score = Math.floor(+firstValue * (+secondValue)*1000)/1000
             break;
         case "-":
             writeDataToBox(opr)
